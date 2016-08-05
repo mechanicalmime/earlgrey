@@ -1,0 +1,18 @@
+<h2>Show appointment</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @appointment.title %>
+  </li>
+
+  <li>
+    <strong>Date:</strong>
+    <%= @appointment.date %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: appointment_path(@conn, :edit, @appointment) %>
+<%= link "Back", to: appointment_path(@conn, :index) %>
